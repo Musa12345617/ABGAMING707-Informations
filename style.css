@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://yt3.googleusercontent.com/xGUmcdLAEQ691t6hQPJbkg7OUQwotzeqos3SBZBbA2qCM6iUP6LvUirCE0AN_BN73W_6SuQD=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+}
+section {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 5px;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #5561c8;
+}

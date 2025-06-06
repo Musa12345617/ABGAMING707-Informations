@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABGAMING707 Informations</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://yt3.googleusercontent.com/xGUmcdLAEQ691t6hQPJbkg7OUQwotzeqos3SBZBbA2qCM6iUP6LvUirCE0AN_BN73W_6SuQD=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      flex-direction: column;
+    }
+    section {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 600px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+    button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      margin: 5px;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #5561c8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="title">ABGAMING707 Informations</h1>
+
+  <section id="Informations">
+    <p><strong>Name:</strong> Belal Tarek</p>
+    <p><strong>Age:</strong> 25</p>
+    <p><strong>IP:</strong> Unknown</p>
+    <p><strong>Country:</strong> Egypt</p>
+    <p><strong>Governorate:</strong> Cairo</p>
+    <p><strong>City:</strong> Cairo</p>
+    <p><strong>Phone Number:</strong> 01200408577</p>
+    <p><strong>Email:</strong> bussabvideo@gmail.com</p>
+  </section>
+   <p><strong>Account Discord:</strong> .mxb7 </p>
+  </section>
+  <div>
+    <button onclick="toggleInfo()">Show/Hide Info</button>
+    <button onclick="copyInfo()">Copy Info</button>
+  </div>
+
+  <script>
+    const infoSection = document.getElementById('infoSection');
+    const title = document.getElementById('title');
+
+    function toggleInfo() {
+      if (infoSection.style.display === 'none') {
+        infoSection.style.display = 'block';
+      } else {
+        infoSection.style.display = 'none';
+      }
+    }
+
+    function copyInfo() {
+      const text = infoSection.innerText;
+      navigator.clipboard.writeText(text)
+        .then(() => alert('Information copied to clipboard!'))
+        .catch(() => alert('Failed to copy!'));
+    }
+
+    title.addEventListener('mouseenter', () => {
+      title.style.color = '#ffcc00';
+      title.style.transform = 'scale(1.1)';
+    });
+    title.addEventListener('mouseleave', () => {
+      title.style.color = 'white';
+      title.style.transform = 'scale(1)';
+    });
+  </script>
+
+</body>
+</html>
