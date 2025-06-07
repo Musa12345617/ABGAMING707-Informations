@@ -74,38 +74,6 @@
    <p><strong>Account Discord:</strong> .mxb7 </p>
   </section>
   <div>
-    <button onclick="toggleInfo()">Show/Hide Info</button>
-    <button onclick="copyInfo()">Copy Info</button>
-  </div>
-
-  <script>
-    const infoSection = document.getElementById('infoSection');
-    const title = document.getElementById('title');
-
-    function toggleInfo() {
-      if (infoSection.style.display === 'none') {
-        infoSection.style.display = 'block';
-      } else {
-        infoSection.style.display = 'none';
-      }
-    }
-
-    function copyInfo() {
-      const text = infoSection.innerText;
-      navigator.clipboard.writeText(text)
-        .then(() => alert('Information copied to clipboard!'))
-        .catch(() => alert('Failed to copy!'));
-    }
-
-    title.addEventListener('mouseenter', () => {
-      title.style.color = '#ffcc00';
-      title.style.transform = 'scale(1.1)';
-    });
-    title.addEventListener('mouseleave', () => {
-      title.style.color = 'white';
-      title.style.transform = 'scale(1)';
-    });
-  </script>
-
+    
 </body>
 </html>
